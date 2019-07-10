@@ -7,32 +7,7 @@ import java.util.TreeSet;
 /**
  * Created by Vasyl Kachala on 06.07.2019.
  */
-public class TreeSetUtils {
-    /**
-     * Create method menu switch case:
-     */
-    public static void menu() {
-        Scanner sc = new Scanner(System.in);
-        String command;
-        label:
-        while (true) {
-            System.out.println("/*********************/");
-            System.out.println("Add number in TreeSet \"1\"");
-            System.out.println("/*********************/");
-            command = sc.nextLine();
-            switch (command) {
-                case "1":
-                    addNumbers();
-                    break;
-                case "0":
-                    sc.close();
-                default:
-                    System.out.println("Error!");
-                    break;
-            }
-        }
-    }
-
+public class Utils {
     /**
      * Create method addNumbers add different number:
      */

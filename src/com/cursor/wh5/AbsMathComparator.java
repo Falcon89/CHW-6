@@ -6,7 +6,7 @@ import java.util.Comparator;
  * Created by Vasyl Kachala on 06.07.2019.
  */
 
-public class SortNumbersComparator implements Comparator<Integer> {
+public class AbsMathComparator implements Comparator<Integer> {
     @Override
     public int compare(Integer in1, Integer in2) {
         if (Math.abs(in1 % 2) == Math.abs(in2 % 2)) {
