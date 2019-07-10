@@ -1,4 +1,4 @@
-package com.cursor.wh5;
+package com.cursor.wh6;
 
 import java.util.Scanner;
 import java.util.Set;
