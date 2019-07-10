@@ -9,9 +9,9 @@ import java.util.TreeSet;
  */
 public class TreeSetUtils {
     /**
-     * Create method menuSelectionCase switch case:
+     * Create method menu switch case:
      */
-    public static void menuSelectionCase() {
+    public static void menu() {
         Scanner sc = new Scanner(System.in);
         String command;
         label:
@@ -22,7 +22,7 @@ public class TreeSetUtils {
             command = sc.nextLine();
             switch (command) {
                 case "1":
-                    numbersTreeSet();
+                    addNumbers();
                     break;
                 case "0":
                     sc.close();
@@ -34,10 +34,10 @@ public class TreeSetUtils {
     }
 
     /**
-     * Create method numbersTreeSet add different number:
+     * Create method addNumbers add different number:
      */
-    public static void numbersTreeSet() {
-        Set<Integer> treeSet = new TreeSet<>(new SortNumbersComparator());
+    public static void addNumbers() {
+        Set<Integer> treeSet = new TreeSet<>(new AbsMathComparator());
         System.out.println("Enter number one digit like " + "2 or 10 or -1 or 19");
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextLine() == true) {
